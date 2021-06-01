@@ -29,9 +29,9 @@ jobs:
     - name: Import solution as unmanaged to build env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: ${{ secrets.devurl }}
-        user-name: ${{ secrets.devuser }}
-        password-secret: ${{ secrets.devpassword }}
+        environment-url: ${{ secrets.buildurl }}
+        user-name: ${{ secrets.builduser }}
+        password-secret: ${{ secrets.buildpassword }}
         solution-file: out/solutions/DentaQuest_POC_PDL_Verification.zip
         force-overwrite: true
         publish-changes: true
@@ -39,9 +39,9 @@ jobs:
     - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: ${{ secrets.devurl }}
-        user-name: ${{ secrets.devuser }}
-        password-secret: ${{ secrets.devpassword }}
+        environment-url: ${{ secrets.buildurl }}
+        user-name: ${{ secrets.builduser }}
+        password-secret: ${{ secrets.buildpassword }}
         solution-name: DentaQuest_POC_PDL_Verification
         managed: true
         solution-output-file: out/ship/DentaQuest_POC_PDL_Verification.zip
