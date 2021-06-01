@@ -72,7 +72,7 @@ jobs:
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: 'https://org5c366e27.crm.dynamics.com//'
+        environment-url: 'https://org5c366e27.crm.dynamics.com/'
         user-name: ${{ secrets.produser }}
         password-secret: ${{ secrets.prodpassword }}
         solution-file: out/release/DentaQuest_POC_PDL_Verification.zip
