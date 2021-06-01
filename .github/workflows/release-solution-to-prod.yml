@@ -29,9 +29,9 @@ jobs:
     - name: Import solution as unmanaged to build env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: 'https://org5c366e27.crm.dynamics.com'
+        environment-url: 'https://org62c9faad.crm.dynamics.com'
         user-name: 'admin@CRM298449.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        password-secret: ${{ secrets.prodpassword }}
         solution-file: out/solutions/DentaQuest_POC_PDL_Verification.zip
         force-overwrite: true
         publish-changes: true
@@ -39,9 +39,9 @@ jobs:
     - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: 'https://org5c366e27.crm.dynamics.com'
+        environment-url: 'https://org62c9faad.crm.dynamics.com'
         user-name: 'admin@CRM298449.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        password-secret: ${{ secrets.prodpassword }}
         solution-name: DentaQuest_POC_PDL_Verification
         managed: true
         solution-output-file: out/ship/DentaQuest_POC_PDL_Verification.zip
@@ -72,9 +72,9 @@ jobs:
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: 'https://org5c366e27.crm.dynamics.com'
+        environment-url: 'https://org62c9faad.crm.dynamics.com'
         user-name: 'admin@CRM298449.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        password-secret: ${{ secrets.prodpassword }}
         solution-file: out/release/DentaQuest_POC_PDL_Verification.zip
         force-overwrite: true
         publish-changes: true
