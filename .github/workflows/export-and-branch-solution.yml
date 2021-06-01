@@ -20,15 +20,15 @@ jobs:
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
         environment-url: 'https://org5c366e27.crm.dynamics.com'
-        user-name: 'admin@CRM298449.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        user-name: ${{ secrets.devuser }}
+        password-secret: ${{ secrets.devpassword }}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: 'https://org5c366e27.crm.dynamics.com'
-        user-name: 'admin@CRM298449.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        user-name: ${{ secrets.devuser }}
+        password-secret: ${{ secrets.devpassword }}
         solution-name: DentaQuest_POC_PDL_Verification
         solution-output-file: out/exported/DentaQuest_POC_PDL_Verification.zip
 
