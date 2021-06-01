@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <AIModels>
+    <AIModel>
+      <msdyn_aimodelid>{98e6fcc6-a509-486f-8c19-3a5d7cd054d7}</msdyn_aimodelid>
+      <msdyn_name>DentaQuest_PDL</msdyn_name>
+      <msdyn_templateid>{10707e4e-1d56-e911-8194-000d3a6cd5a5}</msdyn_templateid>
+      <statecode>1</statecode>
+      <statuscode>1</statuscode>
+      <IsCustomizable>1</IsCustomizable>
+      <msdyn_activerunconfigurationid>{c600d843-4c24-eb11-a813-000d3a4f1244}</msdyn_activerunconfigurationid>
+      <AIConfigurations>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{c600d843-4c24-eb11-a813-000d3a4f1244}</msdyn_aiconfigurationid>
+          <msdyn_customconfiguration>{"version":"DocumentScanning-2","labels":{"Orthoscore":{"defaultId":"aea2df94-06c2-4765-a0e5-52820e9f80ac","layoutSpecificIds":{}},"DeterminationDate":{"defaultId":"92743f03-21c3-4b5e-b881-4b2cb841c4d1","layoutSpecificIds":{}},"ServiceNotReviewed_Comments":{"defaultId":"8bc208f8-0ffd-4306-bf44-76823b13b78d","layoutSpecificIds":{}}},"tables":{},"layouts":{"Collection 1":{"layoutId":"f25e66dc-949f-452c-9cdb-59e3c9197d77"}}}</msdyn_customconfiguration>
+          <msdyn_majoriterationnumber>2</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_name>98e6fcc6-a509-486f-8c19-3a5d7cd054d7_2020-11-11T18:32:36.410Z</msdyn_name>
+          <msdyn_modelrundataspecification>H4sIAAAAAAAEAO1YTWvjMBD9K0ZnQ1lY9pBbN+lCYUkgKXtdZHniqCtLQh6nMSH/fSV/NGnkFLvdpQ0oJ0cz780becTD2pOVBvZDmZziLzAFV5JMvsTkXuoSl0rhnUSOFZnsyYwXWtBqTnMgE0JicotoeFIiFC6c0AK+fb2TTKWQ+vkzxcocJFrcQ6Xdyn1OMyCHmOQ8h2btEihCF4676AwKZrjGWizhjufmUUMWe49aZjHVWnBGXfaNTtdtBPl6fdSysp3IjBwOVs6ixLG9C5qAKHoT2wKL5BGYa34w58LgRhVMmXpfhtKcoM4J09PE/XnnMdlSUfZH/kD1UzU7OEaLp0DbjZ+XeQLGT7Y1IhePZJNwHBOJkNkFqyNRpUytpu9q9y4dAtbYr6CrYB92UZ32rGMJVDgRqPQArMvyoE88xc0AcJPnwTfAs80Q4W2iR6CVqLJ3vkOmlLGFaPu35bk1hlZjaHYXJqBRGO2iYx2/j54Cp+DqFfDprx35/z7adZUPHu5Gw1vHuwc9ZsB74CNHvIfhOoe8nYW3jvlL+PBBZ0queQqS9ZjsMRZ1xnHOZJ0XEEzuKtmTMnP1RuyvDw7eFLzpmo5t8KbgTcGbPqk3rcBsOYO5wiVsOTxB+nuqcvfdWIzZ6ddogl8Fv7qmoxz8KvhV8KtP6Vc1B9JEwL+9MKx5bViV2NnSS8BUCWEp7emMpFvxLj87+PS5iVV3/XiRaUDDfwEQXRENYxYAAA==</msdyn_modelrundataspecification>
+          <msdyn_type>190690001</msdyn_type>
+          <msdyn_aimodelid>{98e6fcc6-a509-486f-8c19-3a5d7cd054d7}</msdyn_aimodelid>
+          <msdyn_trainedmodelaiconfigurationpareid>{0a27e026-cd27-4390-a345-e155be37a132}</msdyn_trainedmodelaiconfigurationpareid>
+          <statecode>2</statecode>
+          <statuscode>7</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+        </AIConfiguration>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{7eee33d3-4924-eb11-a813-000d3a4f15f1}</msdyn_aiconfigurationid>
+          <msdyn_customconfiguration>{"version":"DocumentScanning-1","shouldReturnTables":false}</msdyn_customconfiguration>
+          <msdyn_databinding>{"schemaVersion":2,"input":{"schemaName":"msdyn_aibdatasetfile","queries":{"train":{"type":"fetchXml","query":"&lt;fetch mapping='logical'&gt;\n    &lt;entity name='msdyn_aibdatasetfile'&gt;\n      &lt;filter type='and'&gt;\n  &lt;condition attribute='msdyn_aibdatasetid' operator='eq' value='7438a40a-c06f-4581-a034-429c91f28e2b'/&gt;\n&lt;/filter&gt;\n    &lt;/entity&gt;\n  &lt;/fetch&gt;"}},"relatedEntities":[{"schemaName":"msdyn_AIBDatasetFile_msdyn_AIBuilde","cardinality":"ManyToOne","attributes":[{"specificationName":"binaryName","schemaName":"msdyn_file","dataType":"Image","requiredLevel":"ApplicationRequired"}]}]}}</msdyn_databinding>
+          <msdyn_majoriterationnumber>1</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_modeldata>7311ff26-7987-4613-88b1-c0757ad67b23</msdyn_modeldata>
+          <msdyn_modelperformance>{"metrics":[]}</msdyn_modelperformance>
+          <msdyn_name>98e6fcc6-a509-486f-8c19-3a5d7cd054d7_2020-11-11T18:15:09.424Z</msdyn_name>
+          <msdyn_modelrundataspecification>{
+  "SpecFormatVersion": 1,
+  "InputRootEntity": {
+    "DisplayName": "Document",
+    "Attributes": {
+      "binaryName": { "Type": "Image" }
+    }
+  }
+}</msdyn_modelrundataspecification>
+          <msdyn_type>190690000</msdyn_type>
+          <msdyn_aimodelid>{98e6fcc6-a509-486f-8c19-3a5d7cd054d7}</msdyn_aimodelid>
+          <msdyn_lasttrainorrundate>2020-11-11T18:19:56</msdyn_lasttrainorrundate>
+          <statecode>2</statecode>
+          <statuscode>6</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+          <msdyn_modelprovisioningmetadata>AQAAAJkAAADvu797Ikdlb2dyYXBoeSI6InVzIiwiQ2x1c3RlcklkIjoid3VzIiwiS2V5VmVyc2lvbiI6ImRhZDY0YjU3ZDJmODQ5N2VhMzgxYzYwMTQwYWYyNDNmIiwiU2lnbmF0dXJlVmVyc2lvbiI6InYxIiwiU2lnbmF0dXJlRGF0ZUJpbmFyeSI6NTI0OTI2NzcxMDMwODAwMzkyNX0gAAAAObyE2K9TDfGhrHBochzEDcV5t/CCYSKBvmgf65K5+1KNAQAAeyJ2ZXJzaW9uIjoiRG9jdW1lbnRTY2FubmluZ0NvcHlEYXRhLTEiLCJtb2RlbERhdGEiOnsiaW50ZXJuYWxVbnN1cGVydmlzZWRNb2RlbElkIjoiODQyMTZmOTYtN2E0Mi00ODhmLTlkMDktYjEyZDBmOTE2MDIxIiwiY29nbml0aXZlVW5zdXBlcnZpc2VkUmVzb3VyY2VJZCI6IkZvcm1VbmRlcnN0YW5kaW5nQXBwbGljYXRpb25LZXktNSIsImJhY2tlbmRWZXJzaW9uIjoidjIiLCJrZXlBbGxvY2F0b3JWZXJzaW9uIjoidjIuMCIsIm1vZGVsTGF5b3V0c0NvbmZpZyI6eyJzdWJtb2RlbHMiOltdfSwiRmVhdHVyZXMiOnsidXNlQ29sdW1uQmFzZWRVbnN1cGVydmlzZWRUYWJsZUlkZW50aWZpY2F0aW9uIjp0cnVlfSwibXVsdGlwYWdlVGFibGVEZXRhaWxzIjpbXSwic291cmNlSXNsYW5kSWQiOiJ1cyJ9fQ==</msdyn_modelprovisioningmetadata>
+        </AIConfiguration>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{739c97c5-8102-4725-bbf7-6779239eb80b}</msdyn_aiconfigurationid>
+          <msdyn_customconfiguration>{"version":"DocumentScanning-1","shouldReturnTables":false}</msdyn_customconfiguration>
+          <msdyn_databinding>{"schemaVersion":2,"input":{"schemaName":"msdyn_aibdatasetfile","queries":{"train":{"type":"fetchXml","query":"&lt;fetch mapping='logical'&gt;\n    &lt;entity name='msdyn_aibdatasetfile'&gt;\n      &lt;filter type='and'&gt;\n  &lt;condition attribute='msdyn_aibdatasetid' operator='eq' value='a97a6fc1-2b06-4612-9ab1-24c3bff664ee'/&gt;\n&lt;/filter&gt;\n    &lt;/entity&gt;\n  &lt;/fetch&gt;"}},"relatedEntities":[{"schemaName":"msdyn_AIBDatasetFile_msdyn_AIBuilde","cardinality":"ManyToOne","attributes":[{"specificationName":"binaryName","schemaName":"msdyn_file","dataType":"Image","requiredLevel":"ApplicationRequired"}]}]}}</msdyn_databinding>
+          <msdyn_majoriterationnumber>3</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_modeldata>9c1efb91-90c9-4111-97c4-1032f97d5fc8</msdyn_modeldata>
+          <msdyn_modelperformance>{"metrics":[]}</msdyn_modelperformance>
+          <msdyn_name>98e6fcc6-a509-486f-8c19-3a5d7cd054d7_2020-11-12T15:30:01.621Z</msdyn_name>
+          <msdyn_modelrundataspecification>{
+  "SpecFormatVersion": 1,
+  "InputRootEntity": {
+    "DisplayName": "Document",
+    "Attributes": {
+      "binaryName": { "Type": "Image" }
+    }
+  }
+}</msdyn_modelrundataspecification>
+          <msdyn_type>190690000</msdyn_type>
+          <msdyn_aimodelid>{98e6fcc6-a509-486f-8c19-3a5d7cd054d7}</msdyn_aimodelid>
+          <msdyn_lasttrainorrundate>2020-11-12T15:31:42</msdyn_lasttrainorrundate>
+          <statecode>2</statecode>
+          <statuscode>6</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+          <msdyn_modelprovisioningmetadata>AQAAAJkAAADvu797Ikdlb2dyYXBoeSI6InVzIiwiQ2x1c3RlcklkIjoid3VzIiwiS2V5VmVyc2lvbiI6ImRhZDY0YjU3ZDJmODQ5N2VhMzgxYzYwMTQwYWYyNDNmIiwiU2lnbmF0dXJlVmVyc2lvbiI6InYxIiwiU2lnbmF0dXJlRGF0ZUJpbmFyeSI6NTI0OTI2NzcxMDMyMDQwOTkwNH0gAAAADFzoYPZaHK1Y68mPQ+jF6z2IIVNCxzsrxDpw+zvJW86NAQAAeyJ2ZXJzaW9uIjoiRG9jdW1lbnRTY2FubmluZ0NvcHlEYXRhLTEiLCJtb2RlbERhdGEiOnsiaW50ZXJuYWxVbnN1cGVydmlzZWRNb2RlbElkIjoiOGQzNzRiYzMtMmE2OS00MWYyLWI4YjYtYmUzMjUxZGVlMmVkIiwiY29nbml0aXZlVW5zdXBlcnZpc2VkUmVzb3VyY2VJZCI6IkZvcm1VbmRlcnN0YW5kaW5nQXBwbGljYXRpb25LZXktMyIsImJhY2tlbmRWZXJzaW9uIjoidjIiLCJrZXlBbGxvY2F0b3JWZXJzaW9uIjoidjIuMCIsIm1vZGVsTGF5b3V0c0NvbmZpZyI6eyJzdWJtb2RlbHMiOltdfSwiRmVhdHVyZXMiOnsidXNlQ29sdW1uQmFzZWRVbnN1cGVydmlzZWRUYWJsZUlkZW50aWZpY2F0aW9uIjp0cnVlfSwibXVsdGlwYWdlVGFibGVEZXRhaWxzIjpbXSwic291cmNlSXNsYW5kSWQiOiJ1cyJ9fQ==</msdyn_modelprovisioningmetadata>
+        </AIConfiguration>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{0a27e026-cd27-4390-a345-e155be37a132}</msdyn_aiconfigurationid>
+          <msdyn_customconfiguration>{"version":"DocumentScanning-1","shouldReturnTables":false}</msdyn_customconfiguration>
+          <msdyn_databinding>{"schemaVersion":2,"input":{"schemaName":"msdyn_aibdatasetfile","queries":{"train":{"type":"fetchXml","query":"&lt;fetch mapping='logical'&gt;\n    &lt;entity name='msdyn_aibdatasetfile'&gt;\n      &lt;filter type='and'&gt;\n  &lt;condition attribute='msdyn_aibdatasetid' operator='eq' value='7438a40a-c06f-4581-a034-429c91f28e2b'/&gt;\n&lt;/filter&gt;\n    &lt;/entity&gt;\n  &lt;/fetch&gt;"}},"relatedEntities":[{"schemaName":"msdyn_AIBDatasetFile_msdyn_AIBuilde","cardinality":"ManyToOne","attributes":[{"specificationName":"binaryName","schemaName":"msdyn_file","dataType":"Image","requiredLevel":"ApplicationRequired"}]},{"schemaName":"msdyn_AIBFileAttachedData_msdyn_AIB","specificationName":"labels","cardinality":"OneToMany","embeddedObjects":[{"schemaName":"msdyn_data","isCollection":false,"embeddedObjects":[{"schemaName":"trainingLabel","specificationName":"labels","isCollection":false}]}]}]}}</msdyn_databinding>
+          <msdyn_majoriterationnumber>2</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_modeldata>4bd2ffdc-46b4-40c2-956f-ab2753a0fbcb</msdyn_modeldata>
+          <msdyn_modelperformance>{"metrics":[]}</msdyn_modelperformance>
+          <msdyn_name>98e6fcc6-a509-486f-8c19-3a5d7cd054d7_2020-11-11T18:32:32.346Z</msdyn_name>
+          <msdyn_modelrundataspecification>{
+  "SpecFormatVersion": 1,
+  "InputRootEntity": {
+    "DisplayName": "Document",
+    "Attributes": {
+      "binaryName": { "Type": "Image" }
+    }
+  }
+}</msdyn_modelrundataspecification>
+          <msdyn_type>190690000</msdyn_type>
+          <msdyn_aimodelid>{98e6fcc6-a509-486f-8c19-3a5d7cd054d7}</msdyn_aimodelid>
+          <msdyn_lasttrainorrundate>2020-11-11T18:33:23</msdyn_lasttrainorrundate>
+          <statecode>2</statecode>
+          <statuscode>6</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+          <msdyn_modelprovisioningmetadata>AQAAAJkAAADvu797Ikdlb2dyYXBoeSI6InVzIiwiQ2x1c3RlcklkIjoid3VzIiwiS2V5VmVyc2lvbiI6ImRhZDY0YjU3ZDJmODQ5N2VhMzgxYzYwMTQwYWYyNDNmIiwiU2lnbmF0dXJlVmVyc2lvbiI6InYxIiwiU2lnbmF0dXJlRGF0ZUJpbmFyeSI6NTI0OTI2NzcxMDMxNjkxMDQyOH0gAAAA1g3xal0bY3fOkEu5dKAkOGSPOJ38RaC27jATeWJxi9SJAQAAeyJ2ZXJzaW9uIjoiRG9jdW1lbnRTY2FubmluZ0NvcHlEYXRhLTEiLCJtb2RlbERhdGEiOnsiaW50ZXJuYWxTdXBlcnZpc2VkTW9kZWxJZCI6ImJhZTJiMDI1LTgwZmQtNDdmMi05ODI3LTYxZjgxYTdlNWE4YSIsImNvZ25pdGl2ZVN1cGVydmlzZWRSZXNvdXJjZUlkIjoiRm9ybVVuZGVyc3RhbmRpbmdBcHBsaWNhdGlvbktleS0zIiwiYmFja2VuZFZlcnNpb24iOiJ2MiIsImtleUFsbG9jYXRvclZlcnNpb24iOiJ2Mi4wIiwibW9kZWxMYXlvdXRzQ29uZmlnIjp7InN1Ym1vZGVscyI6W119LCJGZWF0dXJlcyI6eyJ1c2VDb2x1bW5CYXNlZFVuc3VwZXJ2aXNlZFRhYmxlSWRlbnRpZmljYXRpb24iOnRydWV9LCJtdWx0aXBhZ2VUYWJsZURldGFpbHMiOltdLCJzb3VyY2VJc2xhbmRJZCI6InVzIn19</msdyn_modelprovisioningmetadata>
+        </AIConfiguration>
+      </AIConfigurations>
+    </AIModel>
+  </AIModels>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
