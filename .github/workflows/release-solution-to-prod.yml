@@ -22,8 +22,8 @@ jobs:
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
-        solution-folder: solutions/DentaQuest_POC_PDL_Verification
-        solution-file: out/solutions/DentaQuest_POC_PDL_Verification.zip
+        solution-folder: solutions/PADTest
+        solution-file: out/solutions/PADTest.zip
         solution-type: Unmanaged
 
     - name: Import solution as unmanaged to build env
@@ -32,7 +32,7 @@ jobs:
         environment-url: ${{ secrets.buildurl }}
         user-name: ${{ secrets.builduser }}
         password-secret: ${{ secrets.buildpassword }}
-        solution-file: out/solutions/DentaQuest_POC_PDL_Verification.zip
+        solution-file: out/solutions/PADTest.zip
         force-overwrite: true
         publish-changes: true
 
@@ -42,15 +42,15 @@ jobs:
         environment-url: ${{ secrets.buildurl }}
         user-name: ${{ secrets.builduser }}
         password-secret: ${{ secrets.buildpassword }}
-        solution-name: DentaQuest_POC_PDL_Verification
+        solution-name: PADTest
         managed: true
-        solution-output-file: out/ship/DentaQuest_POC_PDL_Verification.zip
+        solution-output-file: out/ship/PADTest.zip
 
     - name: Upload the ready to ship solution to GH artifact store
       uses: actions/upload-artifact@v2
       with:
         name: managedSolutions
-        path: out/ship/DentaQuest_POC_PDL_Verification.zip
+        path: out/ship/PADTest.zip
 
   release-to-staging:
     needs: [ convert-to-managed ]
@@ -75,6 +75,6 @@ jobs:
         environment-url: ${{ secrets.produrl }}
         user-name: ${{ secrets.produser }}
         password-secret: ${{ secrets.prodpassword }}
-        solution-file: out/release/DentaQuest_POC_PDL_Verification.zip
+        solution-file: out/release/PADTest.zip
         force-overwrite: true
         publish-changes: true
