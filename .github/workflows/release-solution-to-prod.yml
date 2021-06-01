@@ -52,29 +52,29 @@ jobs:
         name: managedSolutions
         path: out/ship/DentaQuest_POC_PDL_Verification.zip
 
-  # release-to-staging:
-  #   needs: [ convert-to-managed ]
-  #   runs-on: windows-latest
-  #   env:
-  #     RUNNER_DEBUG: 1
+  release-to-staging:
+    needs: [ convert-to-managed ]
+    runs-on: windows-latest
+    env:
+      RUNNER_DEBUG: 1
 
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #     with:
-  #       lfs: true
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        lfs: true
 
-  #   - name: Fetch the ready to ship solution from GH artifact store
-  #     uses: actions/download-artifact@v2
-  #     with:
-  #       name: managedSolutions
-  #       path: out/release/
+    - name: Fetch the ready to ship solution from GH artifact store
+      uses: actions/download-artifact@v2
+      with:
+        name: managedSolutions
+        path: out/release/
     
-  #   - name: Import solution to prod env
-  #     uses: microsoft/powerplatform-actions/import-solution@v0
-  #     with:
-  #       environment-url: ${{ secrets.produrl }}
-  #       user-name: ${{ secrets.produser }}
-  #       password-secret: ${{ secrets.prodpassword }}
-  #       solution-file: out/release/DentaQuest_POC_PDL_Verification.zip
-  #       force-overwrite: true
-  #       publish-changes: true
+    - name: Import solution to prod env
+      uses: microsoft/powerplatform-actions/import-solution@v0
+      with:
+        environment-url: ${{ secrets.produrl }}
+        user-name: ${{ secrets.produser }}
+        password-secret: ${{ secrets.prodpassword }}
+        solution-file: out/release/DentaQuest_POC_PDL_Verification.zip
+        force-overwrite: true
+        publish-changes: true
