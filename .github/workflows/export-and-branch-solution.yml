@@ -29,21 +29,22 @@ jobs:
         environment-url: ${{ secrets.devurl }}
         user-name: ${{ secrets.devuser }}
         password-secret: ${{ secrets.devpassword }}
-        solution-name: DentaQuest_POC_PDL_Verification
-        solution-output-file: out/exported/DentaQuest_POC_PDL_Verification.zip
+        solution-name: PADTest
+        solution-output-file: out/exported/PADTest.zip
+        run-asynchronously: true
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: out/exported/DentaQuest_POC_PDL_Verification.zip
-        solution-folder: out/solutions/DentaQuest_POC_PDL_Verification
+        solution-file: out/exported/PADTest.zip
+        solution-folder: out/solutions/PADTest
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: out/solutions/DentaQuest_POC_PDL_Verification
-        solution-target-folder: solutions/DentaQuest_POC_PDL_Verification
+        solution-folder: out/solutions/PADTest
+        solution-target-folder: solutions/PADTest
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
