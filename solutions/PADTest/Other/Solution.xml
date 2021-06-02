@@ -3,7 +3,7 @@
   <SolutionManifest>
     <UniqueName>PADTest</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="PADTest" languagecode="1033" />
+      <LocalizedName description="PADTest_Bak" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.0.2</Version>
