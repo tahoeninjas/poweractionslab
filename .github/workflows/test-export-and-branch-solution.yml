@@ -33,6 +33,13 @@ jobs:
         solution-output-file: out/exported/PADTest.zip
         run-asynchronously: true
 
+    - name: upload pac CLI logs
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: pac-cli-log
+        path: ./logs/pac-log.txt
+
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
